@@ -29,21 +29,13 @@ public class LoseBoard extends World
         showText("YOU LOSE!", 400, 200);
         if(Home.endEz && !Home.endMed && !Home.endHrd){
             showText("Score Kill : " + Easy.easyCount, 400, 400);
-            Easy.easyCount = 0;
-            Medium.mediumCount = 0;
-            Hard.hardCount = 0;
         }
         if(Home.endMed && !Home.endEz && !Home.endHrd){
             showText("Score Kill : " + Medium.mediumCount, 400, 400);
-            Easy.easyCount = 0;
-            Medium.mediumCount = 0;
-            Hard.hardCount = 0;
         }
         if(Home.endHrd && !Home.endEz && !Home.endMed){
-            showText("Score Kill : " + Hard.hardCount, 400, 400);            
-            Easy.easyCount = 0;
-            Medium.mediumCount = 0;
-            Hard.hardCount = 0;
+            showText("Score Kill : " + Hard.hardCount, 400, 400);    
+
         }
     }
     
