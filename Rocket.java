@@ -24,15 +24,15 @@ public class Rocket extends Actor
         if(Greenfoot.isKeyDown("space")){
             fire();
         }
-        if(Greenfoot.isKeyDown("left")){
+        if(Greenfoot.isKeyDown("left") || Greenfoot.isKeyDown("a")){
             this.setImage("rsz_left.png");
             this.setLocation(getX()-3,getY());
         }
-        if(Greenfoot.isKeyDown("right")){
+        if(Greenfoot.isKeyDown("right") || Greenfoot.isKeyDown("d")){
             this.setImage("rsz_right.png");
             this.setLocation(getX()+3,getY());
         }
-        if(!(Greenfoot.isKeyDown("left") || Greenfoot.isKeyDown("right"))){
+        if(!(Greenfoot.isKeyDown("left") || Greenfoot.isKeyDown("right") || Greenfoot.isKeyDown("a") || Greenfoot.isKeyDown("d"))){
             this.setImage("rsz_mid.png");
         }
         
